@@ -32,5 +32,13 @@ int main()
     {
         std::cout << "Invalid number of days. Please enter a number greater than or equal to 1.\n";
     }
-		return 0;
-	}
+    else
+		std::cout << "Day 1 population: " << population << "\n";
+    for (int day = 2; day <= numberOfDays; day++)
+    {
+        dailyIncrease = population * (growthPercentage / 100);
+        population = population + dailyIncrease;
+        std::cout << "Day " << day << " population: " << population << "\n";
+    }
+    return 0;
+}
