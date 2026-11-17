@@ -20,7 +20,7 @@ int main()
 	std::cout << "Enter the number of days the population will multiply: ";
 	std::cin >> numberOfDays;
 
-    if (population > 2)
+    if (population < 2)
     {
 		std::cout << "Invalid population. Please enter a number greater than or equal to 2.\n";
     }
