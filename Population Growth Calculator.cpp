@@ -19,5 +19,18 @@ int main()
 	std::cin >> growthPercentage;
 	std::cout << "Enter the number of days the population will multiply: ";
 	std::cin >> numberOfDays;
-    return 0;
-}
+
+    if (population > 2)
+    {
+		std::cout << "Invalid population. Please enter a number greater than or equal to 2.\n";
+    }
+    else if (growthPercentage < 0 || growthPercentage == 0)
+    {
+        std::cout << "Invalid growth percentage. Please enter a number greater than or equal to 1.\n";
+    }
+    else if (numberOfDays < 1)
+    {
+        std::cout << "Invalid number of days. Please enter a number greater than or equal to 1.\n";
+    }
+		return 0;
+	}
